@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        body{
+            background-image: url(https://unblast.com/wp-content/uploads/2021/01/Space-Background-Images.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+        }
+        .register{
+            width: 25%;
+            height: 200%;
+            background-color: rgba(0,0,0,0.5);
+            padding: 40px;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 50px;
+        }
+        .inp{
+            border: none;
+            border-bottom: 1.5px solid rgb(250, 243, 243);
+            border-right: 1.5px solid rgb(251, 246, 246);
+            border-radius: 5px;
+            background: linear-gradient(180deg, grey);
+            color: rgb(19, 19, 20);
+        }
+        .inp::placeholder{
+            color: rgb(21, 21, 21);
+            font-size: 10px;
+        }
+        .btn{
+            background-color: blue;
+            width: 300px;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(233, 217, 41);
+            color: rgb(16, 15, 16);
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="register">
+        <h1 style="color:aqua;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 40px;">Register Here</h1>
+        <form>
+            <label style="color:rgb(159, 196, 231); font-family: 'Courier New', Courier, monospace;">First Name:</label>
+            <input class="inp"  type="first name" placeholder="Enter your first name"style="margin-bottom: 10px; padding: 5px; width: 90%;">
+            <label style="color: rgb(159, 196, 231);font-family: 'Courier New', Courier, monospace;">Last Name:</label>
+            <input class="inp"  type="last name" placeholder="Enter your last name"style="margin-bottom: 10px; padding: 5px; width: 90%;">
+            <label style="color: rgb(159, 196, 231);font-family: 'Courier New', Courier, monospace;">Age:</label>
+            <input class="inp"  type="age" placeholder="Enter your age"style="margin-bottom: 10px; padding: 5px; width: 90%;">
+            <label style="color: rgb(159, 196, 231);font-family: 'Courier New', Courier, monospace;">Email:</label>
+            <input class="inp"  type="email" placeholder="Enter your email"style="margin-bottom: 10px; padding: 5px; width: 90%;">
+            <label style="color: rgb(159, 196, 231);font-family: 'Courier New', Courier, monospace;">Gender:</label><br>
+            <input type="radio" name="gender" id="male">
+            <span id="male" style="color:bisque;">Male</span>
+            <input type="radio" name="gender" id="female">
+            <span id="female" style="color:bisque">Female</span><br>
+
+            <button class="btn" style="margin-top: 30px; padding: 7px;"> Submit</button>
+        </form>
+    </div>
+</body>
+</html>

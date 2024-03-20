@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body{
+            background-image: url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+        }
+        .mycard{
+            width: 25%;
+            height: 70%;
+            background:linear-gradient(180deg, white, grey);
+            padding: 40px;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 50px;
+        }
+        .inp{
+            border: none;
+            border-bottom: 1.5px solid black;
+            border-right: 1.5px solid black;
+            border-radius: 5px;
+            background: linear-gradient(180deg, grey);
+            color: blue;
+        }
+        .inp::placeholder{
+            color: blue;
+            font-size: 10px;
+        }
+        .btn{
+            background-color: blue;
+            width: 80px;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(10, 10, 10);
+            color: rgb(246, 245, 251);
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="mycard">
+        <h1 style="color: rgb(169, 8, 161);font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> Member Login</h1>
+        <img src="https://cdn-icons-png.flaticon.com/512/5087/5087579.png" style="height: 130px; width: 70%;">
+           <form>            
+            <input class="inp"  type="email" placeholder="Enter your email" style="margin-bottom: 10px; padding: 5px; width: 90%;">
+            <input class="inp"  type="password" placeholder="Enter your password" style="padding: 5px; width: 90%;">
+
+            <button class="btn" style="margin-top: 30px; padding: 5px;">Login</button>
+           </form>
+    </div>
+    
+</body>
+</html>
