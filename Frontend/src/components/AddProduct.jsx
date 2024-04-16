@@ -91,7 +91,7 @@ const AddProduct = () => {
                             onChange={productForm.handleChange}
                             value={productForm.values.description} />
                         </div>
-                        <button type='submit' className="btn btn-primary">Product</button>
+                        <button type='submit' className="btn btn-primary">Submit Product</button>
                     </form>
                 </div>
             </div>
