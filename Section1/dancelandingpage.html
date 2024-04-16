@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing WebPage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        header{
+            background-image: url(https://img.freepik.com/premium-vector/party-people-background-with-dancing-silhouettes_3442-725.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 90vh;
+            /* padding-top: 10%; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction:column ;
+           /* color:rgb(231, 208, 208);*/
+        }
+        .hero-title{
+            font-weight:bolder;
+            font-size: 4.5rem;
+            text-shadow: 1px 2px black;
+            color: rgb(143, 178, 244);
+        }
+        .hero-subbtitle{
+            text-shadow: 1px 1px black;
+            font-size: 2.5rem;
+            color: rgb(175, 97, 244);
+        }
+        .hero-subtitle{
+            text-shadow: 1px 1px black;
+            font-size: 2.5rem;
+            color: rgb(234, 103, 221);
+        } 
+        .card{
+            background-color: rgb(160, 204, 236);
+        }
+        .feature-card{
+            box-shadow: 2px 5px black;
+        }
+        .feature-card:hover{
+            transform: scale(0.5,0.5);
+            transition: 0.6s;
+            background-color: rgb(248, 228, 208);
+            color: rgb(19, 18, 18);
+        }
+        .signup-content{
+            position: absolute;
+            margin-top: 5%;
+            color: white;
+        }
+        .vid{
+            position: relative;
+        }
+        .video{
+            height: 400px;
+            width: 850px;
+            object-fit: cover;
+            
+        }
+        .navbar{
+            background-color:rgb(26, 14, 123);
+        }
+        .about{
+            background-color: #3448aa;
+            background-size: cover;
+        }
+        .service{
+            background-color: #7488e8;
+            background-size: cover;
+        }
+    </style>
+</head>
+<section>
+    <!--navbar-->
+    <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="file-earmark-music-fill.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top ">
+             MUSICANA
+          </a>
+        </div>
+      </nav>
+
+    <!--header-->
+    <header>
+        <h6 class="hero-subbtitle">Feel the</h6>
+        <h1 class="hero-title">Rhythm In Motion</h1><br>
+        <h6 class="hero-subtitle">inside your soul</h6>
+        <button class="btn btn-outline-light mt-5">For more info</button>  
+     </header>
+
+     <!-- About Section -->
+
+    <section class="about">
+        <div class="container mt-5 mb-5 d-flex justify-content-center">
+            <div class="card text-center dark">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="https://dnwp63qf32y8i.cloudfront.net/f8cf4299c2a0773e2319bdad8865fec4e10ba116" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-7">
+                        <h1 class="text-center text-dark p-4">ABOUT US</h1>
+                        <p class="text-center text-dark p-4 ">Feel your passion and follow the lead.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main -->
+
+    <section class="mt-5 mb-5">
+        <h1 class="text-center  mb-5" style= "font-weight: bolder; font-size: 70px;color:rgb(37, 6, 139);">DANCE FORMS</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card feature-card text-center ">
+                    <h1 style="color: rgb(73, 29, 126);"> Classical</h1>
+                    <img src="https://www.happiesthealth.com/wp-content/uploads/2022/11/Dancing-1-to-a-classical-fitness-mantra-Article.jpg" style="height: 30vh;"><br>
+                    <p style="font-size: small;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, nam.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card feature-card text-center">
+                    <h1 style="color: rgb(73, 29, 126);"> HipHop</h1>
+                    <img src="https://static.wixstatic.com/media/e39484_16e2046649b24f9784af05421f772078~mv2.jpg/v1/fill/w_890,h_550,al_c,q_85/e39484_16e2046649b24f9784af05421f772078~mv2.jpg"style="height: 30vh;"><br>
+                    <p style="font-size: small;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, nam.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card feature-card text-center">
+                    <h1 style="color: rgb(73, 29, 126);"> Ballet</h1>
+                    <img src="https://qph.cf2.quoracdn.net/main-qimg-6bb2a198e854a59880b22d44bdb1fb09-lq" style="height: 30vh;"><br>
+                    <p style="font-size: small;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, nam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--Services-->
+
+    <section class="service" mt-5 mb-5>
+        <br><h1 class="text-center  mb-5" style= "font-weight: bolder; font-size: 60px;color:rgb(20, 16, 152);"> SERVICES</h1>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <i class="fa-4x fa-solid fa-house mt-2"></i>
+                    <p style="font-size: small;">Availability of AC rooms for practice.</p>
+                </div><br>
+            </div>
+            <div class="col-md-3">
+                <div class="card  text-center">
+                    <i class="fa-4x fa-solid fa-binoculars mt-2"></i>
+                    <p style="font-size: small;">Teaches different forms of dance.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <i class="fa-4x fa-solid fa-video mt-2"></i>
+                    <p style="font-size: small;"> Online classes available.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <i class="fa-4x fa-solid fa-music mt-2"></i>
+                    <p style="font-size: small;"> Best of Multimedia device being used.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Signup Section-->
+
+    <section class="signup">
+    <br><h1 class="text-center mb-5" style="font-weight: bolder; font-size: 50px;color:rgb(15, 45, 154);">Welcome New Students</h1>
+    <div class="container vid d-flex justify-content-center align-items-center">
+        <div class="signup-content" style="z-index: 2;">
+            <h5 class="text-center"> Signup for session</h5>
+            <p class="text-center"> Signup now  for 1 month session <br>completely free.</p>
+            <center><input type="text" placeholder="Enter your email"><br><br>
+            <input type="number" placeholder="Enter your number"><br><br>
+            <button class="btn btn-danger">SIGNUP</button></center>
+        </div>
+        <video class="video" src="/Section1/loopvid.mp4"autoplay loop muted></video>
+    </div>
+    </section>
+    </body>
+
+   <!--footer-->
+
+   <footer class="bg-body-tertiary text-center">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a
+        data-mdb-ripple-init
+          class="btn text-white btn-floating m-1"
+          style="background-color: #3b5998;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1"
+          style="background-color: #55acee;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1"
+          style="background-color: #dd4b39;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1"
+          style="background-color: #ac2bac;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1"
+          style="background-color: #0082ca;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <!-- Github -->
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1"
+          style="background-color: #333333;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2020 Copyright:
+      <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+</body>
+</html>
