@@ -25,7 +25,7 @@ router.post('/authenticate', (req,res)=>{
     });
 })
 
-router.post('/getall',(req,res) => {
+router.get('/getall',(req,res) => {
     Model.find({})
     .then((reset)=> {
         res.json(result); 

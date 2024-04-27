@@ -1,7 +1,36 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import useUserContext from '../UserContext'
 
 const Navbar = () => {
+  const { loggedIn, logout } = useUserContext();
+  console.log(loggedIn);
+  const showLoggedin = () => {
+    if(loggedIn){
+      return (
+        <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li className="nav-item">
+            <button style={{ fontFamily: "initial"}} classname="btn btn-danger ms-3"onClick={logout}>
+              Logout
+            </button>
+          </li>
+      </ul>
+      );
+    }else{
+      return
+      <div>
+        <div>
+          <Link className="nav-link" to="/Signup">
+            Signup
+          </Link>
+          <Link className="nav-link" to="/Login">
+            Login
+          </Link>
+        </div>
+      </div>
+
+    }
+    }
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -27,7 +56,7 @@ const Navbar = () => {
                   Home
                 </Link>
               </li>
-              <li className="nav-item">
+              {/*<li className="nav-item">
                 <Link className="nav-link" to="/Signup">
                   Signup
                 </Link>
@@ -36,7 +65,8 @@ const Navbar = () => {
                 <Link className="nav-link" to="/Login">
                   Login
                 </Link>
-              </li>
+              </li>*/}
+              {showLoggedin()}
               <li className="nav-item">
               <Link className="nav-link" to="/EventHandling">
                   EventHandling
@@ -47,16 +77,23 @@ const Navbar = () => {
                   ManageUsers
                 </Link>
               </li>
+
+              <li className="nav-item">
+              <Link className="nav-link" to="/ManageProduct">
+                  ManageProduct
+                </Link>
+              </li>
               
               <li className="nav-item">
               <Link className="nav-link" to="/AddProduct">
                   Product
                 </Link>
-              </li>
-              
-              
-
-              
+              </li>    
+              <li className="nav-item">
+              <Link className="nav-link" to="/ProductListing">
+                  ProductList
+                </Link>
+              </li>                         
             </ul>
             <form className="d-flex">
               <input

@@ -2,6 +2,8 @@ import React from 'react'
 import {useFormik} from 'formik'
 import * as Yup from 'yup'
 import { enqueueSnackbar } from 'notistack'
+import useUserContext from '../UserContext';
+
 
 const LoginSchema =Yup.object().shape({
   name: Yup.string()
@@ -15,6 +17,8 @@ const LoginSchema =Yup.object().shape({
 })
 
 const Login = () => {
+  //Logout
+const {setLoggedIn} = useUserContext();
   // step 1: formik initialization
   const loginForm = useFormik({
     initialValues: {
@@ -41,12 +45,13 @@ const Login = () => {
       action.resetForm()
 
       if (res.status === 200){
-        enqueueSnackbar('Login successful', {varient: 'success'})
-      }else {
-        enqueueSnackbar('Login failed', {varient:'error'})
-
-      }
+        enqueueSnackbar('Login successful', {varient: 'success'});
+      }setLoggedIn(true);
+      const data = await res.json();
+      console.log(data);
+      sessionStorage.SetItem('User',JSON.stringify(data))
     },
+    
     validationSchema: LoginSchema
   })
     return (
